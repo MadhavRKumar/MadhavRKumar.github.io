@@ -1,80 +1,79 @@
+span{
+  background: #2B2B2B;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-width: 25vw;
+  min-height: 25vw;
+  opacity: 100%;
+  box-shadow: 0px 4px 0px #000000;
+  border-radius: 5px;
+  padding: 1vw 1vw;
+  margin: 1vw 10vw 5vw 0;
+  line-height: 60px;
+  cursor: pointer;
+}
+.container{
+  display: inline;
+  margin: 0 auto;
+	position: relative;
+	width: 30%;		/* desired width */
+  float: left;
+}
+.container:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+.top-offset{
+  width: 20vw;
+  height: 20vw;
+  float: left;
+}
+
+.offset{
+  width: 28vw;
+  height: 25vw;
+  float: left;
+}
+
+span:active{
+  background:#1E1E1E;
+  transform: translateY(4px);
+  box-shadow:none;
+}
+
+br{
+  clear: left;
+}
+
+p{
+  color: #EAEAEA;
+  position: absolute;
+  bottom: 5vw;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11vw;
+}
+@media only screen and (max-width: 768px) {
+  p{
+    bottom: 3vw;
+    }
+}
+@media only screen and (max-width: 400px) {
+  p{
+    bottom: 0;
+    }
+}
+
 body{
-  background-color:#151515;
-  overflow-x: hidden;
-  font-family: Raleway, sans-serif;
-  color: #FFF;
-}
-
-h1{
-  font-size: 7vh;
-}
-img {
-    width: 100%;
-    height: auto;
-}
-
-hr{
-  height:2px;
-  width:60%;
-  color:#FFF;
-}
-a {
-    color:#FFF;
-    text-decoration:none;
-}
-a:hover{
-  color:#fff;
-}
-
-.square{
-  float:left;
-  position: relative;
-  width: 30%;
-  padding-bottom: 20%;
-  margin: 1.66%;
-  overflow:hidden;
-}
-
-.content{
-  position:absolute;
-  height:80%;
-  width:90%;
-  padding: 10% 5%;
-}
-
-.table{
-  display:table;
-  height:100%;
-  width:100%;
-}
-
-.table-cell{
-  display:table-cell;
-  vertical-align:middle;
-}
-.content .rs{
-    width:auto;
-    height:auto;
-    max-height:90%;
-    max-width:100%;
-}
-.bg{
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size:contain;
-    color:#fff;
-}
-.img1{
-    background-image:url('http://dummyimage.com/600x400');
-}
-
-.links{
-  margin:0;
-  list-style:none;
-  padding-left:0;
-}
-.links li{
-  display:inline;
-  padding:0 10px;
-  font-size: 3vh;
+  background: #121212;
+  display: block;
+  overflow: hidden;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
 }
