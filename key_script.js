@@ -17,11 +17,15 @@ function keyEventHandler(e, className){
   var key = keys[code];
   if(key){
     var elem = document.getElementById(key);
-    if(className){
+    if(!className){
       simulateClick(elem);
-      elem.className="";
+      elem.className = "key";
     }
-    elem.className = className;
+    else{
+      if(!elem.className.includes(className)){
+        elem.className = elem.className+" "+className;
+      }
+    }
   }
 }
 function simulateClick(el) {
