@@ -5,18 +5,29 @@ var keys = { 74: "J",
 };
 
 document.onkeydown = function(e){
-  return keyEventHanlder(e, "activate");
+  return keyEventHandler(e, "activate");
 }
 
 document.onkeyup = function(e){
-  keyEventHanlder(e, "");
+  return keyEventHandler(e, "");
 }
 
-function keyEventHanlder(e, className){
+function keyEventHandler(e, className){
   var code = e.keyCode ? e.keyCode : e.which;
   var key = keys[code];
   if(key){
     var elem = document.getElementById(key);
+    if(className){
+      simulateClick(elem);
+    }
     elem.className = className;
   }
+}
+function simulateClick(el) {
+  var event = new MouseEvent('click', {
+    'view': window,
+    'bubbles': true,
+    'cancelable': true
+  });
+  el.dispatchEvent(event);
 }
