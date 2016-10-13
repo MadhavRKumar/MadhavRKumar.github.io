@@ -23,8 +23,12 @@ a.back{
   float: right;
 }
 
-a.link{color: #f7f0f5;
+a.link{
+  color: #f7f0f5;
   text-decoration: none;
+  font-size: 4vw;
+  line-height: 6vw;
+  margin-left: 0.3vw;
 }
 a.link:hover{
   text-decoration: underline;
@@ -119,16 +123,6 @@ body{
   font-family: 'Nunito', sans-serif;
 }
 
-ul li{
-  list-style: none;
-  text-align:justify;
-  font-size: 4vw;
-  margin-top: 1.5vw;
-}
-
-ul{
-  padding: 1vw 1vw;
-}
 
 @-webkit-keyframes fadeIn {
   0%   { opacity: 0; }
