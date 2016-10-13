@@ -5,15 +5,18 @@ var keys = { 74: "J",
 };
 
 document.onkeydown = function(e){
+  return keyEventHanlder(e, "activate");
+}
+
+document.onkeyup = function(e){
+  keyEventHanlder(e, "");
+}
+
+function keyEventHanlder(e, className){
   var code = e.keyCode ? e.keyCode : e.which;
   var key = keys[code];
   if(key){
     var elem = document.getElementById(key);
-    elem.className += "activate";
-    setTimeout(function(){ unpress(elem)}, 100);
+    elem.className = className;
   }
-}
-
-function unpress(elem){
-  elem.className = "";
 }
