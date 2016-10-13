@@ -16,13 +16,19 @@ a.key{
   cursor: pointer;
 }
 
-a.link{
+a.back{
   color: #f7f0f5;
   font-size: 7vw;
   display: inline;
   float: right;
 }
 
+a.link{color: #f7f0f5;
+  text-decoration: none;
+}
+a.link:hover{
+  text-decoration: underline;
+}
 .container{
   display: inline;
   margin: 0 auto;
@@ -90,7 +96,6 @@ h1{
 }
 
 p.body{
-  color: #f7f0f5;
   font-size: 4vw;
   width: 90%;
 }
@@ -104,6 +109,7 @@ body.fadeIn{
 
 body{
   background: #121212;
+  color: #f7f0f5;
   display: block;
   overflow: hidden;
   -webkit-user-select: none;  /* Chrome all / Safari all */
@@ -111,6 +117,17 @@ body{
   -ms-user-select: none;      /* IE 10+ */
   user-select: none;
   font-family: 'Nunito', sans-serif;
+}
+
+ul li{
+  list-style: none;
+  text-align:justify;
+  font-size: 4vw;
+  margin-top: 1.5vw;
+}
+
+ul{
+  padding: 1vw 1vw;
 }
 
 @-webkit-keyframes fadeIn {
@@ -128,52 +145,4 @@ body{
 @keyframes fadeIn {
   0%   { opacity: 0; }
   100% { opacity: 1; }
-}
-
-@-webkit-keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translate3d(-30%, 0, 0);
-    }
-
-  100% {
-      opacity: 1;
-      transform: none;
-  }
-}
-
-@-moz-keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translate3d(-30%, 0, 0);
-    }
-
-  100% {
-      opacity: 1;
-      transform: none;
-  }
-}
-
-@-o-keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translate3d(-30%, 0, 0);
-    }
-
-  100% {
-      opacity: 1;
-      transform: none;
-  }
-}
-
-@keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translate3d(-30%, 0, 0);
-    }
-
-  100% {
-      opacity: 1;
-      transform: none;
-  }
 }
