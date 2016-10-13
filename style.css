@@ -78,14 +78,22 @@ h1{
   color: #EAEAEA;
   font-size: 8vw;
   font-family: 'Roboto', sans-serif;
+  animation-name: fadeInUp;
+  animation-duration: 1.3s;
 }
 
-p{
+p.body{
   color: #f7f0f5;
   font-size: 4vw;
   width: 90%;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
 }
 
+body.fadeIn{
+  animation-name: fadeIn;
+  animation-duration: 2.0s;
+}
 
 body{
   background: #121212;
@@ -96,5 +104,20 @@ body{
   -ms-user-select: none;      /* IE 10+ */
   user-select: none;
   font-family: 'Nunito', sans-serif;
+}
 
+@keyframes fadeIn{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(-30%, 0, 0);
+    }
+
+  100% {
+      opacity: 1;
+      transform: none;
+  }
 }

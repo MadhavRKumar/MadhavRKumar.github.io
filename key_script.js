@@ -19,6 +19,7 @@ function keyEventHandler(e, className){
     var elem = document.getElementById(key);
     if(className){
       simulateClick(elem);
+      elem.className="";
     }
     elem.className = className;
   }
