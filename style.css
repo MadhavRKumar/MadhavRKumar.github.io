@@ -29,18 +29,24 @@ span{
 }
 
 .top-offset{
-  width: 20vw;
-  height: 20vw;
+  width: 22vw;
+  height: 22vw;
   float: left;
 }
 
 .offset{
-  width: 28vw;
+  width: 30vw;
   height: 25vw;
   float: left;
 }
 
 span:active{
+  background:#1E1E1E;
+  transform: translateY(4px);
+  box-shadow:none;
+}
+
+.activate{
   background:#1E1E1E;
   transform: translateY(4px);
   box-shadow:none;
@@ -54,6 +60,7 @@ p{
   color: #EAEAEA;
   position: absolute;
   bottom: 2vw;
+  left: 2vw;
   font-family: 'Roboto', sans-serif;
   font-size: 11vw;
 }
