@@ -1,4 +1,4 @@
-span{
+a{
   background: #2B2B2B;
   position: absolute;
   top: 0;
@@ -40,7 +40,7 @@ span{
   float: left;
 }
 
-span:active{
+a:active{
   background:#1E1E1E;
   transform: translateY(0.5vw);
   box-shadow:none;
@@ -52,28 +52,40 @@ span:active{
   box-shadow:none;
 }
 
-br{
+br.endpoint{
   clear: left;
 }
 
-p{
+.key{
   color: #EAEAEA;
   position: absolute;
   bottom: 2vw;
   left: 2vw;
-  font-family: 'Roboto', sans-serif;
   font-size: 11vw;
 }
 @media only screen and (max-width: 768px) {
-  p{
+  .key{
     bottom: -1vw;
     }
 }
 @media only screen and (max-width: 400px) {
-  p{
+  .key{
     bottom: -5vw;
     }
 }
+
+h1{
+  color: #EAEAEA;
+  font-size: 8vw;
+  font-family: 'Roboto', sans-serif;
+}
+
+p{
+  color: #f7f0f5;
+  font-size: 4vw;
+  width: 90%;
+}
+
 
 body{
   background: #121212;
@@ -83,4 +95,6 @@ body{
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
   user-select: none;
+  font-family: 'Nunito', sans-serif;
+
 }
