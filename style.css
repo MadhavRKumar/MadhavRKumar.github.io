@@ -87,27 +87,19 @@ h1{
   font-size: 8vw;
   font-family: 'Roboto', sans-serif;
   display: inline;
-  -webkit-animation: fadeInUp 1.3s;/* Safari 4+ */
-  -moz-animation: fadeInUp 1.3s;/* Fx 5+ */
-  -o-animation: fadeInUp 1.3s;/* Opera 12+ */
-  animation: fadeInUp 1.3s; /* IE 10+, Fx 29+ */
 }
 
 p.body{
   color: #f7f0f5;
   font-size: 4vw;
   width: 90%;
+}
+
+body.fadeIn{
   -webkit-animation: fadeIn 1.2s;/* Safari 4+ */
   -moz-animation: fadeIn 1.2s;/* Fx 5+ */
   -o-animation: fadeIn 1.2s;/* Opera 12+ */
   animation: fadeIn 1.2s; /* IE 10+, Fx 29+ */
-}
-
-body.fadeIn{
-  -webkit-animation: fadeIn 2s;/* Safari 4+ */
-  -moz-animation: fadeIn 2s;/* Fx 5+ */
-  -o-animation: fadeIn 2s;/* Opera 12+ */
-  animation: fadeIn 2s; /* IE 10+, Fx 29+ */
 }
 
 body{
@@ -173,6 +165,7 @@ body{
       transform: none;
   }
 }
+
 @keyframes fadeInUp {
     0% {
       opacity: 0;
