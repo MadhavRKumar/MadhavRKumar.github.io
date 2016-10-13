@@ -1,3 +1,4 @@
+//JS object acts as library for our keyCodes
 var keys = { 74: "J",
   75: "K",
   77: "M",
@@ -19,10 +20,10 @@ function keyEventHandler(e, className){
     var elem = document.getElementById(key);
     if(!className){
       simulateClick(elem);
-      elem.className = "key";
+      elem.className = "key";  //reset the css to an unpressed key
     }
     else{
-      if(!elem.className.includes(className)){
+      if(!elem.className.includes(className)){  //makes sure to only add the className once
         elem.className = elem.className+" "+className;
       }
     }
