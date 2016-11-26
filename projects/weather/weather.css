@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono);
+.sunny {
+  background-image: url('./images/sunny.svg');
+}
+
+.starry {
+  background-image: url('./images/starry.svg');
+}
+
+@media only screen and (min-device-width:600px) {
+  .sunny {
+    background-image: url('./images/sunny_small.svg');
+    }
+  .starry {
+    background-image: url('./images/starry_small.svg');  }
+}
+
+body {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #001225ff;
+  height: 100vh;
+  overflow:hidden;
+}
+
+div {
+  font-family: 'Space Mono', sans-serif;
+  font-weight: 700;
+  font-size: 15vh;
+  color: #FFF;
+}
+
+.wrapper {
+  margin: 8% auto auto auto;
+  text-align: center;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+canvas{
+  height:30vh;
+}
