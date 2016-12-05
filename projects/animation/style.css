@@ -10,6 +10,7 @@ body{
     font-family: "Rubik One", sans-serif;
     font-size: 100%;
     color: #dd7e1c;
+    overflow-x: hidden;
 }
 h1{
   font-size: 3.5em;
