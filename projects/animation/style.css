@@ -1,0 +1,94 @@
+div{
+  text-align: center;
+  width: auto;
+  overflow: visible;
+  margin: 10%;
+}
+
+body{
+    background-color: #252525;
+    font-family: "Rubik One", sans-serif;
+    font-size: 100%;
+    color: #dd7e1c;
+}
+h1{
+  font-size: 3.5em;
+  text-align: center;
+}
+#back-wheel, #front-wheel{
+  animation: spin 2s linear infinite;
+  transform-origin: center center;
+}
+
+.outline{
+  stroke-dasharray: 136.25px;
+  stroke-dashoffset: 1090px;
+  animation: draw 12s linear infinite;
+}
+
+.D{
+  stroke-dasharray: 2.75px;
+  stroke-dashoffset: 110px;
+  animation: draw 4s steps(25) infinite;
+}
+.O{
+  animation: hop 2.1s steps(2) infinite;
+}
+
+.P{
+  animation: hop 2s steps(2) infinite reverse;
+}
+.E{
+  stroke-dasharray: 43px;
+  stroke-dashoffset: 43px;
+  animation: draw 4s steps(25) infinite alternate;
+}
+.container{
+  animation: pass 6s linear infinite;
+}
+
+@keyframes draw {
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes hop {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
+
+@keyframes spin {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pass {
+  0%{
+      transform: translateX(-1000px);
+  }
+  100%{
+    transform: translatex(1000px);
+  }
+}
+
+@keyframes wiggle {
+  0%, 50%,100%{
+    transform: rotate(0);
+  }
+  25%{
+    transform: rotate(-25deg);
+  }
+  75%{
+    transform: rotate(25deg);
+  }
+}
