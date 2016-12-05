@@ -21,6 +21,23 @@ h1{
   transform-origin: center center;
 }
 
+#front-pedal{
+  animation: spin 1.5s linear infinite;
+  transform-origin: center top;
+}
+
+#back-pedal{
+  animation: spin 1.5s linear infinite;
+  transform-origin: center bottom;
+}
+
+#front-foot{
+  animation: footRot 1.5s linear infinite;
+}
+#back-foot{
+  animation: backfootRot 1.5s linear infinite;
+}
+
 .outline{
   stroke-dasharray: 136.25px;
   stroke-dashoffset: 1090px;
@@ -46,6 +63,22 @@ h1{
 }
 .container{
   animation: pass 6s linear infinite;
+}
+@keyframes backfootRot {
+  from{
+    transform: rotate(0) translateY(-30px) rotate(0);
+  }
+  to{
+    transform: rotate(360deg) translateY(-30px) rotate(-360deg);
+  }
+}
+@keyframes footRot {
+  from{
+    transform: rotate(0) translateY(30px) rotate(0);
+  }
+  to{
+    transform: rotate(360deg) translateY(30px) rotate(-360deg);
+  }
 }
 
 @keyframes draw {
