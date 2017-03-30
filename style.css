@@ -123,6 +123,10 @@ body{
   font-family: 'Nunito', sans-serif;
 }
 
+.scroll{
+  overflow: auto;
+}
+
 
 @-webkit-keyframes fadeIn {
   0%   { opacity: 0; }
