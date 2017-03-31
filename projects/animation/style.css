@@ -16,27 +16,6 @@ h1{
   font-size: 3.5em;
   text-align: center;
 }
-#back-wheel, #front-wheel{
-  animation: spin 2s linear infinite;
-  transform-origin: center center;
-}
-
-#front-pedal{
-  animation: spin 1.5s linear infinite;
-  transform-origin: center top;
-}
-
-#back-pedal{
-  animation: spin 1.5s linear infinite;
-  transform-origin: center bottom;
-}
-
-#front-foot{
-  animation: footRot 1.5s linear infinite;
-}
-#back-foot{
-  animation: backfootRot 1.5s linear infinite;
-}
 
 .outline{
   stroke-dasharray: 136.25px;
@@ -61,25 +40,6 @@ h1{
   stroke-dashoffset: 43px;
   animation: draw 4s steps(25) infinite alternate;
 }
-.container{
-  animation: pass 6s linear infinite;
-}
-@keyframes backfootRot {
-  from{
-    transform: rotate(0) translateY(-30px) rotate(0);
-  }
-  to{
-    transform: rotate(360deg) translateY(-30px) rotate(-360deg);
-  }
-}
-@keyframes footRot {
-  from{
-    transform: rotate(0) translateY(30px) rotate(0);
-  }
-  to{
-    transform: rotate(360deg) translateY(30px) rotate(-360deg);
-  }
-}
 
 @keyframes draw {
   to{
@@ -96,33 +56,3 @@ h1{
   }
 }
 
-
-@keyframes spin {
-  0%{
-    transform: rotate(0);
-  }
-  100%{
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes pass {
-  0%{
-      transform: translateX(-1000px);
-  }
-  100%{
-    transform: translatex(1000px);
-  }
-}
-
-@keyframes wiggle {
-  0%, 50%,100%{
-    transform: rotate(0);
-  }
-  25%{
-    transform: rotate(-25deg);
-  }
-  75%{
-    transform: rotate(25deg);
-  }
-}
