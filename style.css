@@ -1,13 +1,37 @@
+body {
+  background: url("./images/bg.png");
+  min-height: 100vh;
+}
 .center {
   margin: 0 auto;
 }
 
 .main-head {
-  width: 30%;
+  font-family: 'Poppins', sans-serif;
+
+  width: 50%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
 }
 
 h1 {
-  border: none;
+  font-size: 64px;
+  color: #383838;
   text-align: center;
+  border: none;
+}
 
+.nav {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+
+}
+
+.nav li {
+  display: inline-block;
+  margin: 5%;
 }
