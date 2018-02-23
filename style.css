@@ -1,5 +1,5 @@
 body {
-  background: url("./images/bg.png");
+  background: #e4e4e4 url("./images/bg.png") center no-repeat;
   min-height: 100vh;
 }
 .center {
@@ -19,19 +19,30 @@ body {
 
 h1 {
   font-size: 64px;
+  padding: 0 0 10px 0;
   color: #383838;
   text-align: center;
-  border: none;
+  border-bottom: 5px solid #383838;
 }
 
 .nav {
   list-style-type: none;
   text-align: center;
   padding: 0;
-
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+a {
+  text-decoration: none;
+  color: #383838;
 }
 
+a:hover, a:focus {
+  text-decoration: none;
+  color: #FFBCBC;  
+}
 .nav li {
-  display: inline-block;
-  margin: 5%;
+  font-size: 36px;
+  padding: 20px;
 }
