@@ -60,9 +60,50 @@ a:hover, a:focus {
   text-decoration: none;
   color: #ffb8b8;  
 }
+
 .nav li {
   font-family: 'Poppins', sans-serif;
 
   font-size: 36px;
   padding: 20px;
+}
+
+.display-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 300px;
+  min-height: 300px;
+}
+
+.img-container{
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  height: 100%;
+  background: #000;
+  transition: 0.5s ease;
+}
+
+.img-container:hover .overlay {
+  opacity: 0.75;
+}
+
+.title {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 100px 0;
 }
