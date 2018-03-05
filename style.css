@@ -7,9 +7,6 @@ body {
   background: #e4e4e4;
 }
 
-.about-bg {
-  background: #e4e4e4 url("./images/about_bg.png") right no-repeat;
-}
 .main-bg {
   background: #e4e4e4 url("./images/bg.png") center no-repeat;
 
@@ -34,11 +31,6 @@ h1 {
   color: #383838;
   text-align: center;
   border:  none;
-}
-
-.about-head {
-  text-align: left;
-  margin: 0 25%;
 }
 
 .nav {
@@ -67,6 +59,14 @@ a:hover, a:focus {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   font-size: 24px;
+}
+
+.about-text {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.4;
+  text-align: center;
+  margin: 2%;
+  font-size: 36px;
 }
 
 .nav li {
