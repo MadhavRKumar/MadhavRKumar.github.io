@@ -43,9 +43,9 @@ body{
   height: 250px;
   border: 2px solid #C6BEAD;
   border-radius: 5px;
--webkit-box-shadow:rgba(191,183,168,1),, 0px 0px 26px 0px rgba(0,0,0,0.75);
--moz-box-shadow: rgba(191,183,168,1),, 0px 0px 26px 0px rgba(0,0,0,0.75);
-box-shadow: rgba(191,183,168,1), 0px 0px 26px 0px rgba(0,0,0,0.75);
+  box-shadow: rgba(191,183,168,1), 0px 0px 26px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow:rgba(191,183,168,1), 0px 0px 26px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: rgba(191,183,168,1), 0px 0px 26px 0px rgba(0,0,0,0.75);
 }
 
 .screen{
