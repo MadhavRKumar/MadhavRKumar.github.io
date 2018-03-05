@@ -96,6 +96,7 @@ a:hover, a:focus {
 }
 
 .img-container{
+  margin: 10px;
   position: relative;
 }
 
