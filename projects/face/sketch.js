@@ -2,7 +2,7 @@ var count = 0;
 var head;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(600, 600);
   createFace();
 }
 

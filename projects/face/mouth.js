@@ -22,7 +22,12 @@ class Mouth {
             y = random(-this.nose.noseHeight * 1.1, this.head.h / 3);
         }
 
-        this.points[4] = createVector(this.points[3].x+10, this.points[3].y-5);
+        if(this.points[2].y > this.points[3].y){
+            this.points[4] = createVector(this.points[3].x+random(5), this.points[3].y-random(5));
+        }
+        else{
+            this.points[4] = createVector(this.points[3].x-random(5), this.points[3].y+random(5));
+        }
     }
 
 

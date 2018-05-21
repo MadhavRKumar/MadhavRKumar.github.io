@@ -17,6 +17,11 @@ h1 {
 
 }
 
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+
 
 body {
   min-height: 100%;
@@ -38,6 +43,10 @@ body {
   left: 50%;
 
   transform: translate(-50%, -50%);
+}
+
+.no-scrollbar {
+  overflow: hidden;
 }
 
 .nav {
