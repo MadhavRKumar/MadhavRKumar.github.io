@@ -4,17 +4,17 @@ var name = "";
 var showLine = true;
 var statement = "";
 
-const fontSize = 32;
+const fontSize = 48;
+const typeSize = 32;
 const question = "What is your name?";
 function preload() {
 
 }
 
 function setup() {
-    createCanvas(900, 600);
+    createCanvas(600, 400);
     background("#333333")
     fill("#efefef");
-    textSize(fontSize);
     textAlign(CENTER);
     strokeWeight(4);
     statement = question;
@@ -24,17 +24,20 @@ function setup() {
 function draw() {
     background("#333333")
     noStroke();
-    text(statement, width / 2, height * 0.1);
-    text(name, width / 2, height * 0.25);
+    
+    textSize(fontSize);
+    text(statement, width / 2, height * 0.25);
+    
+    textSize(typeSize);
+    text(name, width / 2, height * 0.5);
 
-    if (frameCount % 50 == 0) {
+    if (frameCount % 45 == 0) {
         showLine = !showLine;
     }
 
     if (showLine) {
         stroke("#efefef");
-
-        line((width + textWidth(name)) / 2, height * 0.25 - fontSize, (width + textWidth(name)) / 2, height * 0.25 + fontSize / 2);
+        line((width + textWidth(name)) / 2, height * 0.5 - typeSize, (width + textWidth(name)) / 2, height * 0.5 + typeSize / 2);
     }
 
 }
@@ -76,7 +79,7 @@ function messUpName(n) {
             }
 
             if (toAdd) {
-                if (index == 0) {
+                if (arr[index].match(/[A-Z]/)) {
                     toAdd = toAdd.toUpperCase();
                 }
 
