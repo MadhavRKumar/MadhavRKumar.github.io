@@ -6,11 +6,13 @@ var showLine = true;
 var nameEntered = false;
 var isDone = false;
 var statement = "";
+var guessCount = 0;
 
 const fontSize = 48;
 const typeSize = 32;
+const maxGuess = 11;
 const question = "What is your name?";
-const stopTrying = "Ugh your name is too hard.\nI'll just call you ";
+const stopTrying = "Your name is too hard.\nI'll just call you\n";
 const giveUp = "Well it's nice to meet you,\n";
 
 var yesX;
@@ -60,9 +62,14 @@ function draw() {
             displayButtons();
         }
     }
-    else{
+    else {
         fill("#efefef");
-        text(giveUp + wrongName + "!", width/2, height/2);
+        if (guessCount < maxGuess) {
+            text(giveUp + wrongName + "!", width / 2, height / 2);
+        }
+        else {
+            text(stopTrying + name[0] + "!", width / 2, height / 2 - typeSize*2);
+        }
     }
 }
 
@@ -71,7 +78,13 @@ function mousePressed() {
         isDone = true;
     }
     else if (isMouseInBox(noX, buttonY, buttonWidth, buttonHeight) && nameEntered) {
-        guess();
+        if (guessCount > maxGuess) {
+            isDone = true;
+        }
+        else {
+            guess();
+        }
+
     }
 }
 
@@ -95,6 +108,7 @@ function keyTyped() {
 function guess() {
     wrongName = messUpName(name);
     statement = wrongName + "?";
+    guessCount++;
 }
 
 function messUpName(n) {
