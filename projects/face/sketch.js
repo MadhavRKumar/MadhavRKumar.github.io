@@ -9,7 +9,7 @@ function setup() {
 function createFace() {
   background('#e4e4e4');
   var base = min(width, height);
-  var size = random(base/4, base/2);
+  var size = random(base/4, base);
   head = new Head(size, size);
   head.show();
 }
