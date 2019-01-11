@@ -41,8 +41,8 @@
         camera.aspect = w / h;
         baseTexture.setSize(w, h);
         camera.updateProjectionMatrix();
+        
     }
-
 
     function init() {
         let skullLightX = lightFunction(),
@@ -142,7 +142,7 @@
         // load resource
         loader.load(
             // resource URL
-            'assets/skelly.obj',
+            'assets/skelly2.obj',
 
             // callback function when resource is loaded
             function (loadObj) {
