@@ -25,13 +25,9 @@ canvas {
 
 body {
   min-height: 100%;
-  background: #e4e4e4;
+  background: #EFF0F1;
 }
 
-.main-bg {
-  background: #e4e4e4 url("./images/bg.png") center no-repeat;
-
-}
 .center {
   margin: 0 auto;
 }
@@ -77,6 +73,12 @@ a:hover, a:focus {
   font-size: 24px;
 }
 
+@media only screen and (min-width: 600px) {
+  .about-text {
+    line-height: 1.4;
+    font-size: 36px;
+  }
+}
 .about-text {
   font-family: 'Poppins', sans-serif;
   line-height: 2;
@@ -84,12 +86,7 @@ a:hover, a:focus {
   margin: 2%;
   font-size: 18px;
 }
-@media only screen and (min-width: 600px) {
-  .about-text {
-    line-height: 1.4;
-    font-size: 36px;
-  }
-}
+
 
 .nav li {
   font-family: 'Poppins', sans-serif;
@@ -100,8 +97,9 @@ a:hover, a:focus {
 
 .display-grid {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 25%;
 }
 
 .work {
@@ -117,29 +115,8 @@ a:hover, a:focus {
   max-height: 600px;
 }
 
-.img-container{
-  margin: 10px;
-  position: relative;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  opacity: 0;
-  height: 100%;
-  background: #000;
-  transition: 0.5s ease;
-}
-
-.img-container:hover .overlay {
-  opacity: 0.75;
-}
-
 .title {
-  color: #fff;
+  color: #383838;
   font-family: 'Poppins', sans-serif;
   text-align: center;
   padding: 100px 0;
