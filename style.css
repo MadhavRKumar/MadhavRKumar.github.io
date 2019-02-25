@@ -9,12 +9,37 @@ h1 {
   text-align: center;
   border:  none;
 }
+.display-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+}
 
+.title {
+  color: #383838;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 30px 15px;
+  margin: auto;
+}
+ 
 @media only screen and (min-width: 500px) {
- h1{
+ h1 {
   font-size: 64px;
  }
 
+ .display-grid {
+  margin: 0 25%;
+ }
+
+
+
+}
+@media only screen and (min-width: 2000px) {
+  .title {
+    margin: 0;
+  }
 }
 
 canvas {
@@ -95,17 +120,11 @@ a:hover, a:focus {
   padding: 20px;
 }
 
-.display-grid {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0 25%;
-}
 
 .work {
   max-width: 300px;
-  min-width: 300px;
   max-height: 300px;
+  min-width: 300px;
   min-height: 300px;
 }
 
@@ -115,9 +134,3 @@ a:hover, a:focus {
   max-height: 600px;
 }
 
-.title {
-  color: #383838;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  padding: 100px 0;
-}
