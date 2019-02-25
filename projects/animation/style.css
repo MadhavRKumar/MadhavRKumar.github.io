@@ -17,6 +17,11 @@ h1{
   text-align: center;
 }
 
+.description {
+  text-align: center;
+  color: #202020;
+}
+
 .outline{
   stroke-dasharray: 136.25px;
   stroke-dashoffset: 1090px;
