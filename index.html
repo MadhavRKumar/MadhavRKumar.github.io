@@ -4,15 +4,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Madhav Kumar</title>
   <link rel="shortcut icon" type="image/png" href=".\images\favicon.png">
-
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Proza+Libre&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <html>
-
-<body>
-  <h1>Madhav Kumar</h1>
-
+<body class="flex">
+  <header>
+    <h1 id="name">Madhav Kumar</h1>
+    <p id="description" class="body">
+      I'm a web developer and generative artist.
+    </p>
+  </header>
+  <div class="bottom-half">
+    <ul id="list">
+      <li id="work">
+        <a>Work</a>
+      </li>
+      <li id="art">
+        <a>Art</a>
+      </li>
+    </ul>
+  </div>
 </body>
+<script src="anim.js"></script>
 
 </html>
