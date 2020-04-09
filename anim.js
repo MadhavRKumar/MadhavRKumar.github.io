@@ -6,8 +6,8 @@
     tl.from("#name", { duration, x: width, ease: "back.inOut", opacity: 0});
     tl.from("#description", {duration: 0.25, opacity:0, y: -5, ease: "power2.in" });
     tl.from(".bottom-half", {duration:0.5, opacity:0, y:200, ease: "power1.in", onComplete:toggleOverflow, onCompleteParams: [html]}, "-=0.5");
-    tl.from("#art", {duration:0.25, opacity:0, y:30, ease:"back.out"});
-    tl.from("#work", {duration:0.25, opacity:0, y:20, ease:"back.out"}, "-=0.12");
+    tl.from("#art", {duration:0.25, opacity:0, y:20, ease:"back.out"});
+    tl.from("#work", {duration:0.25, opacity:0, y:30, ease:"back.out"}, "-=0.125");
 
 })()
 
