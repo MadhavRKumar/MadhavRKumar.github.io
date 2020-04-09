@@ -79,6 +79,10 @@ h1 {
   height: 100%;
 }
 
+.no-overflow {
+  overflow-y:  hidden;
+}
+
 .bottom-half {
   flex-grow: 1;
   background: #383838;
